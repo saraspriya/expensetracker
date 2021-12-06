@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- 1. document about layout, responsive etc.-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="css/site.css">
+<title>My Expense Tracker</title>
+<script type="text/javascript" src="js/validation.js"></script>
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body onload="initialise();" style="background-image: url('assets/bg1.jpg');">
+
+<h1><b>W</b>eb <b>E</b>xpense <b>T</b>racker</h1>
+<p class="fontTopText">Accounts for the month of 
+	<script language="javascript">
+		showMonth();
+	</script> 
+</p>
+
+
+
+<div class="container">
+	<div class="left">
+	  <p class="fontOverview">Income</p>
+	  <p class="fontOverview" id="incomevalue">--</p>
+	</div>
+
+	<div class="main">
+	  <p class="fontOverview">Expense</p>
+	  <p class="fontOverview" id="expensevalue">--</p>
+	</div>
+
+	<div class="right">
+	  <p class="fontOverview">Profit</p>
+	  <p class="fontOverview" id="profitvalue">--</p>
+	</div>
+</div>
+
+<div class="container">
+	<div>.</div>
+	<div class="newEntryleft">
+	  <p class="fontOverview">1. New Entry</p>
+	  <p class="fontOverview">Select the type of entry:
+		<span><select class="selectbox" id="typeEntry">
+		  		<option>Income</option>
+		  		<option>Expense</option>
+		  	</select>
+		  <!--	<button value="ClearLocal" onclick="clearLocal();">ClearLocal</button>-->
+		  </span>
+	  </p>
+	</div>
+
+	<div class="newEntrymiddle">
+	  <p class="fontOverview">2. Description & Amount</p>
+	  <p><input type="text" name="" placeholder="Entry's Description" id="descriptiontxt" onclick="changeblink();"><input type="number" name="" placeholder="Amount" id="amounttxt" onclick="changeblink();"> <span class="warningspace" id="warningarea">.</span>
+	  </p>
+
+	</div>
+
+	<div class="newEntryright">
+	  <p class="fontOverview">3. Click Save button:</p>
+	    <p><input type="button" name="" value="Save Entry" onclick="validate();">
+	  </p>
+	</div>
+
+</div>
+
+
+<div class="container">
+	<div>.</div>
+
+	<div class="detailsIncome">
+	  <a name="incdetails"></a>
+	  <p class="fontOverview">Details of Income</p>
+	  <p class="fontOverview" id="detailsInc"></p>
+	 
+	</div>
+
+	<div class="detailsExpenses">
+		<a name="expdetails"></a>
+	  <p class="fontOverview">Details of Expenses</p>
+	   <p class="fontOverview" id="detailsExp"></p>
+	</div>
+
+
+
+</div>
+
+
+<div class="container" >
+	<div>.</div>
+
+	<div class="detailsIncomeChart">
+	<p class="fontOverview">Details of Expenses</p>
+	<p id="displaychartExpense">
+		 <canvas id="myChart"></canvas>
+		 <script language="javascript">
+			
+		</script>
+	</p>
+	</div>
+
+
+	<div class="detailsExpensesChart">
+		<p class="fontOverview">Details of Income</p>
+	<p id="displaychartIncome">
+		 <canvas id="myChartIncome"></canvas>
+		
+	</p>
+	</div>
+
+
+
+</div>
+
+
+
+
+</body>
+
+
+
+</html>
