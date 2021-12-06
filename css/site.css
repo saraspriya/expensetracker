@@ -1,0 +1,191 @@
+* {
+  box-sizing: border-box;
+}
+
+
+.left {
+  background-color: #6A896A;
+  padding: 10px;
+  float: left;
+  width: 40%; /* The width is 20%, by default */
+  border-radius: 15px;
+  
+}
+
+.main {
+  background-color: #6C7E7E;
+  padding: 10px;
+  float: left;
+  width: 40%; /* The width is 60%, by default */
+  border-radius: 15px;
+}
+
+.newEntryleft {
+  background-color: #15361e;
+  padding: 10px;
+  float: left;
+  width: 40%; /* The width is 60%, by default */
+  border-radius: 15px;
+}
+.newEntrymiddle {
+  background-color: #15261a;
+  padding: 10px;
+  float: left;
+  width: 40%; /* The width is 60%, by default */
+  border-radius: 15px;
+}
+
+.newEntryright {
+  background-color: #15361e;
+  padding: 10px;
+  float: left;
+  width: 20%; /* The width is 60%, by default */
+  border-radius: 15px;
+}
+
+
+
+
+
+.right {
+  background-color: #6A896A;
+  padding: 10px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
+  border-radius: 15px;
+}
+
+.detailsIncome {
+  background-color: #15361e;
+  padding: 10px;
+  float: left;
+  width: 50%; 
+  border-radius: 15px;
+ 
+}
+
+
+.detailsExpenses {
+  background-color: #03402d;
+  padding: 10px;
+  float: left;
+  width: 50%; 
+  border-radius: 15px;
+}
+
+.detailsExpensesChart
+{
+	background-color: #044729;
+  padding: 10px;
+  float: left;
+  width: 100%; 
+  border-radius: 15px;
+}
+
+.detailsIncomeChart
+{
+	background-color: #011c10;
+  padding: 10px;
+  float: left;
+  width: 100%; 
+  border-radius: 15px;
+}
+
+/* Use a media query to add a break point at 800px: */
+@media screen and (max-width: 800px) {
+  .left, .main, .right, .newEntryleft, .newEntrymiddle, .newEntryright, .detailsIncome, .detailsExpenses, .detailsExpensesChart, .detailsIncomeChart{
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+.fontOverview
+{
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 18px;
+	letter-spacing: 0.6px;
+	word-spacing: 3.4px;
+	color: #D2FF73;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: capitalize;
+}
+
+.fontTopText
+{
+
+	font-family: "Comic Sans MS", cursive, sans-serif;
+	font-size: 20px;
+	
+	color: #000;
+	font-weight: 700;
+	
+}
+
+.warningspace
+{
+	font-family: "Verdana", cursive, sans-serif;
+	font-size: 10px;
+	letter-spacing: 0.6px;
+	word-spacing: 3.4px;
+	color: #fff;
+	font-weight: 700;
+	text-decoration: none;
+	font-style: normal;
+	font-variant: normal;
+	text-transform: uppercase;
+	animation:blinkingText 1.2s steps(5, start) infinite;
+
+}
+
+@keyframes blinkingText{
+    0%{     color: #fff;    }
+    49%{    color: #fff; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #fff;    }
+}
+
+.selectbox
+{
+
+	font-size: 20px;
+	letter-spacing: 1px;
+	word-spacing: 3.4px;
+	color: #000000;
+
+	
+	
+}
+
+input
+{
+
+	font-size: 20px;
+	letter-spacing: 1px;
+	word-spacing: 0.1px;
+	color: #000;
+}
+
+body 
+{
+   background-image: linear-gradient(lightblue, lightyellow, white);
+   background-image: url("assets/bg10.jpg");
+   background: url("assets/bg10.jpg");
+}
+
+a
+{
+	color: #ccc;
+}
+
+a:visited
+{
+	color: #fff;
+}
+
+
+
+
+
