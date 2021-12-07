@@ -4,7 +4,7 @@
 
 
 .left {
-  background-color: #6A896A;
+  background-color: #15361e;
   padding: 10px;
   float: left;
   width: 40%; /* The width is 20%, by default */
@@ -13,10 +13,18 @@
 }
 
 .main {
-  background-color: #6C7E7E;
+  background-color: #15261a;
   padding: 10px;
   float: left;
   width: 40%; /* The width is 60%, by default */
+  border-radius: 15px;
+}
+
+.right {
+  background-color: #15361e;
+  padding: 10px;
+  float: left;
+  width: 20%; /* The width is 20%, by default */
   border-radius: 15px;
 }
 
@@ -47,13 +55,7 @@
 
 
 
-.right {
-  background-color: #6A896A;
-  padding: 10px;
-  float: left;
-  width: 20%; /* The width is 20%, by default */
-  border-radius: 15px;
-}
+
 
 .detailsIncome {
   background-color: #15361e;
