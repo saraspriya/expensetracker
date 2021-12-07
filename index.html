@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<!-- 1. document about layout, responsive etc.-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
 <link rel="stylesheet" href="css/site.css">
 <title>My Expense Tracker</title>
-<script type="text/javascript" src="js/validation.js"></script>
+<script src="js/validation.js"></script>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
@@ -16,7 +17,7 @@
 
 <h1><b>W</b>eb <b>E</b>xpense <b>T</b>racker</h1>
 <p class="fontTopText">Accounts for the month of 
-	<script language="javascript">
+	<script>
 		showMonth();
 	</script> 
 </p>
@@ -56,14 +57,14 @@
 
 	<div class="newEntrymiddle">
 	  <p class="fontOverview">2. Description & Amount</p>
-	  <p><input type="text" name="" placeholder="Entry's Description" id="descriptiontxt" onclick="changeblink();"><input type="number" name="" placeholder="Amount" id="amounttxt" onclick="changeblink();"> <span class="warningspace" id="warningarea">.</span>
+	  <p><input type="text" placeholder="Entry's Description" id="descriptiontxt" onclick="changeblink();"><input type="number" placeholder="Amount" id="amounttxt" onclick="changeblink();"> <span class="warningspace" id="warningarea">.</span>
 	  </p>
 
 	</div>
 
 	<div class="newEntryright">
 	  <p class="fontOverview">3. Click Save button:</p>
-	    <p><input type="button" name="" value="Save Entry" onclick="validate();">
+	    <p><input type="button" value="Save Entry" onclick="validate();">
 	  </p>
 	</div>
 
@@ -74,14 +75,14 @@
 	<div>.</div>
 
 	<div class="detailsIncome">
-	  <a name="incdetails"></a>
+	  <a id="incdetails"></a>
 	  <p class="fontOverview">Details of Income</p>
 	  <p class="fontOverview" id="detailsInc"></p>
 	 
 	</div>
 
 	<div class="detailsExpenses">
-		<a name="expdetails"></a>
+		<a id="expdetails"></a>
 	  <p class="fontOverview">Details of Expenses</p>
 	   <p class="fontOverview" id="detailsExp"></p>
 	</div>
@@ -98,9 +99,7 @@
 	<p class="fontOverview">Details of Expenses</p>
 	<p id="displaychartExpense">
 		 <canvas id="myChart"></canvas>
-		 <script language="javascript">
-			
-		</script>
+		
 	</p>
 	</div>
 
